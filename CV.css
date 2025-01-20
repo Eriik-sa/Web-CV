@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #143b3b;
+    --text-color: #727171;
+}
+
+html {
+    font-size: 10px
+}
+
+body {
+    font-family: Inter;
+    background-color: black;
+    color: white
+}
+
+/* estilo comum */
+image {
+    width: 100%
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+/*layouts */
+.container {
+    max-width: 700px;
+    width: 90%;
+}
