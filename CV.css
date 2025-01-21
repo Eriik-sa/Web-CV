@@ -7,23 +7,43 @@
 }
 
 :root {
-    --primary-color: #143b3b;
-    --text-color: #727171;
+    --primary-color: #011d1dd2;
+    --text-color: #524f4f;
 }
 
-html {
-    font-size: 10px
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* Garante que HTML e body ocupem toda a altura */
+    box-sizing: border-box;
+    font-size: 10px;
 }
 
 body {
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     background-color: black;
-    color: white
+    /* Cor de fundo do body */
+    color: white;
+}
+
+.Foto_perfil img {
+    width: 200px;
+    /* Ajuste o tamanho conforme necessário */
+    height: 200px;
+    /* Define altura proporcional */
+    border-radius: 50%;
+    /* Deixa a borda redonda */
+    object-fit: cover;
+    /* Faz a imagem se ajustar ao círculo */
+    border: 3px solid black;
+    /* Borda opcional */
 }
 
 /* estilo comum */
 image {
-    width: 100%
+    width: 100%;
 }
 
 a {
@@ -33,6 +53,20 @@ a {
 
 /*layouts */
 .container {
-    max-width: 700px;
+    min-height: calc(100vh - 10rem);
+    /* Garante 100% da altura menos o padding */
+    padding: 5rem;
+    /* Espaço nas bordas */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    max-width: 1000px;
+    /* Largura máxima */
     width: 90%;
+    /* Largura responsiva */
+    background-color: var(--primary-color);
+    /* Cor de fundo da área principal */
+    box-sizing: border-box;
+    /* Inclui padding no cálculo de largura/altura */
+    border-radius: 1rem;
+    /*deixa as bordas arredondadas */
 }
