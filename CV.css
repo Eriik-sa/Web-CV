@@ -7,8 +7,8 @@
 }
 
 :root {
-    --primary-color: #011d1dd2;
-    --text-color: #524f4f;
+    --primary-color: #142330a8;
+    --text-color: #fffcfcda;
 }
 
 html,
@@ -24,15 +24,12 @@ body {
 body {
     font-family: Inter, sans-serif;
     background-color: black;
-    /* Cor de fundo do body */
     color: white;
 }
 
 .Foto_perfil img {
     width: 200px;
-    /* Ajuste o tamanho conforme necessário */
     height: 200px;
-    /* Define altura proporcional */
     border-radius: 50%;
     /* Deixa a borda redonda */
     object-fit: cover;
@@ -46,9 +43,21 @@ image {
     width: 100%;
 }
 
+.nome_perfil {
+    font: 200;
+    font-size: 5rem;
+    font-weight: 700;
+    display: flex;
+}
+
+.container_pdf {
+    font-weight: 600;
+    font-size: 12px;
+}
+
 a {
     text-decoration: none;
-    color: white
+    color: rgb(115, 151, 250);
 }
 
 /*layouts */
@@ -56,17 +65,33 @@ a {
     min-height: calc(100vh - 10rem);
     /* Garante 100% da altura menos o padding */
     padding: 5rem;
-    /* Espaço nas bordas */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
     margin: 0 auto;
-    /* Centraliza horizontalmente */
     max-width: 1000px;
-    /* Largura máxima */
     width: 90%;
-    /* Largura responsiva */
     background-color: var(--primary-color);
-    /* Cor de fundo da área principal */
     box-sizing: border-box;
     /* Inclui padding no cálculo de largura/altura */
     border-radius: 1rem;
-    /*deixa as bordas arredondadas */
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+
+.Foto_perfil {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+/* Perfil*/
+.container_perfil {
+    display: flex;
 }
