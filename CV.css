@@ -7,18 +7,17 @@
 }
 
 :root {
-    --primary-color: #142330a8;
-    --text-color: #fffcfcda;
+    --primary-color: #0d2e4c80;
+    --text-color: #e0cf33;
 }
 
 html,
 body {
+    height: 100%;
+    font-size: 10px;
     margin: 0;
     padding: 0;
-    height: 100%;
-    /* Garante que HTML e body ocupem toda a altura */
     box-sizing: border-box;
-    font-size: 10px;
 }
 
 body {
@@ -31,40 +30,41 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    /* Deixa a borda redonda */
     object-fit: cover;
-    /* Faz a imagem se ajustar ao círculo */
     border: 3px solid black;
-    /* Borda opcional */
-}
-
-/* estilo comum */
-image {
-    width: 100%;
 }
 
 .nome_perfil {
-    font: 200;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 700;
-    display: flex;
+    text-align: center;
 }
 
 .container_pdf {
     font-weight: 600;
-    font-size: 12px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
 a {
     text-decoration: none;
-    color: rgb(115, 151, 250);
+    color: #0A87BB;
 }
 
-/*layouts */
+a:hover {
+    text-decoration: underline;
+}
+
+.descricao_pessoal {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
 .container {
     min-height: calc(100vh - 10rem);
-    /* Garante 100% da altura menos o padding */
-    padding: 5rem;
+    padding: 4rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 4rem;
@@ -72,26 +72,49 @@ a {
     max-width: 1000px;
     width: 90%;
     background-color: var(--primary-color);
-    box-sizing: border-box;
-    /* Inclui padding no cálculo de largura/altura */
     border-radius: 1rem;
+}
+
+.container_esquerdo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contato {
+    margin-bottom: 1.5rem;
 }
 
 @media only screen and (max-width: 768px) {
     .container {
-        width: 100%;
         grid-template-columns: 1fr;
         padding: 3rem;
         gap: 7rem;
     }
+
+    .container_perfil {
+        flex-direction: column;
+    }
 }
 
-.Foto_perfil {
-    grid-column: 1 / -1;
-    margin-bottom: 2rem;
-}
-
-/* Perfil*/
 .container_perfil {
     display: flex;
+}
+
+.cargos h3,
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 2px;
+}
+
+.atividades {
+    margin-bottom: 1.5rem;
+}
+
+.titulo_perfil {
+    font-size: 1.8rem;
+    font-weight: 480;
+    text-transform: uppercase;
 }
