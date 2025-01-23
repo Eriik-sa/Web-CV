@@ -108,8 +108,17 @@ h4 {
     color: var(--text-color);
     margin-bottom: 2px;
 }
-
+.hard_skills, .soft_skills{
+    width: 48%; /* cada setor ocupa metade do espaço */
+}
 .hard_skills h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 2px;
+}
+
+.soft_skills h6 {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-color);
