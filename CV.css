@@ -7,7 +7,7 @@
 }
 
 :root {
-    --primary-color: #20202070;
+    --primary-color: #2020205e;
     --text-color: #e0cf33;
 }
 
@@ -31,7 +31,7 @@ body {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid rgba(65, 64, 64, 0.452);
+    border: 3px solid rgba(70, 69, 69, 0.301);
 }
 
 .titulo_perfil {
@@ -112,12 +112,12 @@ a:hover {
     display: flex;
 }
 
-.cargos h2 {
+.cargos h1 {
     text-align: center;
 }
 
-.cargos h3,
-h4 {
+.cargos h2,
+h3 {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-color);
@@ -157,13 +157,18 @@ h4 {
     /* cada setor ocupa metade do espaço */
 }
 
-.hard_skills h5 {
+.Habilidades {
+    text-align: center;
+    text-size:
+}
+
+.hard_skills h1 {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-color);
 }
 
-.soft_skills h6 {
+.soft_skills h1 {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-color);
@@ -190,6 +195,6 @@ h4 {
 
 .titulo_perfil {
     font-size: 1.8rem;
-    font-weight: 480;
+    font-weight: 600;
     text-transform: uppercase;
 }
