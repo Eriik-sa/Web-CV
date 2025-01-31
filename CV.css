@@ -52,6 +52,14 @@ body {
     text-align: center;
 }
 
+.bandeira img {
+    position: fixed;
+    top: 10px;
+    left: 50px;
+    width: 60px;
+    cursor: pointer;
+}
+
 .container_pdf {
     font-weight: 600;
     font-size: 1.2rem;
