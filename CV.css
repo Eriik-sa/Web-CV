@@ -7,7 +7,7 @@
 }
 
 :root {
-    --primary-color: #2020205e;
+    --primary-color: #20202081;
     --text-color: #e0cf33;
 }
 
@@ -36,27 +36,33 @@ body {
 
 .titulo_perfil {
     font-size: 22px;
-    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--text-color);
     font-weight: 750;
-    margin-left: 100px;
+    text-align: right;
+    margin-right: 20px
 }
 
 .descricao_pessoal {
-    margin-left: 1rem;
+    margin-left: 3rem;
     margin-top: 0;
 }
 
 .nome_perfil {
+    width: 100%;
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
+    margin-left: 60px;
+
 }
 
 .bandeira img {
     position: fixed;
     top: 10px;
-    left: 50px;
+    right: 50px;
     width: 60px;
+    border: var(--primary-color);
     cursor: pointer;
 }
 
@@ -75,11 +81,25 @@ a:hover {
     text-decoration: underline;
 }
 
+.github img,
+.linkedin img {
+    object-fit: cover;
+    width: 25px;
+    margin-left: 3px;
+    margin-right: 2px;
+    height: 25px;
+    border-radius: 25%;
+}
+
+.github img {
+    margin-left: 10px;
+}
+
 .descricao_pessoal {
     margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: 400;
-    color: var(--text-color);
+    color: white
 }
 
 .container {
@@ -103,7 +123,12 @@ a:hover {
 
 .contato {
     margin: 0;
+    line-height: 25px;
     margin-top: 5px;
+}
+
+.contato h1 {
+    margin-top: 8px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -132,13 +157,13 @@ h3 {
     font-size: 20px;
     font-weight: 700;
     color: var(--text-color);
-    margin-bottom: 2px;
+    margin-top: 1rem;
 }
 
 .empresa {
     font-size: 20px;
     font-weight: 600;
-    color: rgba(255, 252, 252, 0.918);
+    color: rgba(255, 252, 252, 0.966);
     margin-left: 2px;
 }
 
@@ -153,13 +178,11 @@ h3 {
 }
 
 .atividades {
-    margin-bottom: 1.5rem;
     line-height: 2;
 }
 
 .skills_container {
     /*"Habilidades"*/
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
@@ -168,7 +191,8 @@ h3 {
 
 .Habilidades {
     font-size: 25px;
-
+    margin-left: 13rem;
+    margin-bottom: 1rem;
 }
 
 .skills_content {
@@ -186,7 +210,9 @@ h3 {
 }
 
 .hard_skills h1,
-.soft_skills h1 {
+.soft_skills h1,
+.container_formacao h1,
+.container_cursos h1 {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-color);
@@ -195,8 +221,5 @@ h3 {
 
 .container_formacao h1,
 .container_cursos h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--text-color);
     margin-bottom: 2px;
 }
