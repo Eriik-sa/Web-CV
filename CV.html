@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo</title>
     <link rel="stylesheet" href="CV.css">
+    <script src="CV.JS"></script>
+    <script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
 </head>
 
 <body>
@@ -16,12 +18,14 @@
                     <img src="Imagens/Foto_perfil.jpg" alt="Foto de Perfil">
                 </div>
                 <div class="bandeira">
-                    <img src="Imagens/br_flag.png" alt="brasil" onclick="mudar_idioma()">
+                    <div class="bandeira">
+                        <img id="flag" src="Imagens/brasil_flag.png" alt="brasil" onclick="mudar_idioma()">
+                    </div>
                 </div>
                 <div>
                     <h1 class="nome_perfil">Erik Fernando Brito de Sá</h1>
-                    <p class="titulo_perfil">Desenvolvedor de software JR.</p>
-                    <p class="descricao_pessoal">
+                    <p class="titulo_perfil" data-translate="titulo">Desenvolvedor de software JR.</p>
+                    <p class="descricao_pessoal" data-translate="descricao">
                         Placeholder blablabla blablabla blablabla blablabla blablabla blablabla
                     </p>
                     <div class="container_pdf">
@@ -32,22 +36,21 @@
 
             <div class="container_perfil">
                 <section class="contato">
-                    <h1>Informações de contato:</h1>
+                    <h1 data-translate="contato">Informações de contato:</h1>
                     <ul>
                         <li>Telefone: (81) 98541-4017</li>
                         <li>E-mail: <a href="mailto:erikfernandosa@gmail.com">erikfernandosa@gmail.com</a></li>
                         <li>Endereço: Rua Professor Silvio Rabelo, Jaboatão dos Guararapes - PE</li>
                         <li>Redes Sociais: <span class="linkedin"><img src="Imagens/linkedin.png"
-                                    alt="linkedin_logo"></span><a href="https://www.linkedin.com/in/eriksa/">
-                                Linkedin</a>
-                            <span class="github"><img src="Imagens/github.png" alt="github_logo"></span><a
+                                    alt="linkedin_logo"></span><a
+                                href="https://www.linkedin.com/in/eriksa/">Linkedin</a>
+                            <span class="github"><img src="Imagens/github.png" alt="github_logo"></span> <a
                                 href="https://github.com/Eriik-sa"> Github</a>
-
                     </ul>
                 </section>
 
                 <div class="cargos">
-                    <h1>Experiência Profissional </h1>
+                    <h1 data-translate="experiencia">Experiência Profissional </h1>
                     <h2>Jovem Aprendiz - Auxiliar administrativo (Julho 2024 - Dezembro 2024)<br></h2>
                     <div class="empresa">
                         Empresa - <span class="Fed">Fed</span><span class="Ex">Ex</span>
@@ -78,7 +81,7 @@
 
                 </div>
                 <div class="skills_container">
-                    <h1 class="Habilidades">Habilidades</h1>
+                    <h1 class="Habilidades" data-translate="habilidades">Habilidades</h1>
                     <div class="skills_content">
                         <div class="hard_skills">
                             <h1>Hard Skills:</h1>
@@ -106,13 +109,13 @@
                     </div>
                 </div>
                 <div class="container_formacao">
-                    <h1>Formação</h1>
+                    <h1 data-translate="formacao">Formação</h1>
                     <p>Ensino médio completo - Colégio Elo (2018 - 2020)</p>
                     <p>Ensino Superior incompleto - Administração de empresas - UNIFG (Fevereiro - Dezembro 2022)</p>
                     <p>Programa para jovem aprendizes - ESPRO (Março - Agosto 2022)</p>
                 </div>
                 <div class="container_cursos">
-                    <h1>Cursos</h1>
+                    <h1 data-translate="cursos">Cursos</h1>
                     <p>Potência Tech Ifood (Python para ciência de dados) - Digital Innovation One </p>
                     <p>Lógica de programação com Python - USP</p>
                     <p>Desenvolvimento web utilizando: Javascript, HTML e CSS - Curso em vídeo</p>

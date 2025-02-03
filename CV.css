@@ -62,8 +62,13 @@ body {
     top: 10px;
     right: 50px;
     width: 60px;
-    border: var(--primary-color);
+    height: auto;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bandeira img:hover {
+    transform: scale(1.1);
 }
 
 .container_pdf {
