@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     "titulo": "Junior Software Developer",
                     "descricao": "Placeholder text blablabla...",
                     "contato": "Contact Information",
+                    "telefone": "Cellphone: (+55) 81 98541-4017",
+                    "endereco": "Address: Professor Silvio Rabelo Street, Jaboatão dos Guararapes - PE, Brazil",
+                    "redes": "Social Networks:",
+                    "linkedin": "LinkedIn",
                     "experiencia": "Professional Experience",
                     "habilidades": "Skills",
                     "formacao": "Education",
@@ -18,6 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     "titulo": "Desenvolvedor de Software JR.",
                     "descricao": "Placeholder blablabla blablabla...",
                     "contato": "Informações de contato",
+                    "telefone": "Telefone: (81) 98541-4017",
+                    "endereco": "Endereço: Rua Professor Silvio Rabelo, Jaboatão dos Guararapes - PE",
+                    "redes": "Redes Sociais:",
+                    "linkedin": "LinkedIn",
+                    "github": "GitHub",
                     "experiencia": "Experiência Profissional",
                     "habilidades": "Habilidades",
                     "formacao": "Formação",
@@ -31,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function atualizarTextos() {
         document.querySelectorAll("[data-translate]").forEach(el => {
-            el.textContent = i18next.t(el.dataset.translate);
+            el.innerHTML = i18next.t(el.dataset.translate);
         });
     }
 
@@ -39,37 +48,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const flag = document.getElementById("flag");
         const novoIdioma = i18next.language === "pt" ? "en" : "pt";
 
-        // Troca o idioma do site
         i18next.changeLanguage(novoIdioma, function () {
-            atualizarTextos(); // Atualiza os textos após a troca de idioma
+            atualizarTextos();
 
-            // Altera a bandeira conforme o idioma
-            if (novoIdioma === "en") {
-                flag.src = "Imagens/usa_flag.png";
-                flag.alt = "eua";
-            } else {
-                flag.src = "Imagens/brasil_flag.png";
-                flag.alt = "brasil";
-            }
+            flag.src = novoIdioma === "en" ? "Imagens/usa_flag.png" : "Imagens/brasil_flag.png";
+            flag.alt = novoIdioma === "en" ? "eua" : "brasil";
         });
     }
 
-    // Garante que o botão de troca de idioma esteja funcionando
     document.getElementById("flag").addEventListener("click", mudar_idioma);
 });
-function mudar_idioma() {
-    const flag = document.getElementById("flag");
-    const novoIdioma = i18next.language === "pt" ? "en" : "pt";
-
-    // Troca o idioma do site
-    i18next.changeLanguage(novoIdioma, atualizarTextos);
-
-    // Altera a bandeira conforme o idioma
-    if (novoIdioma === "en") {
-        flag.src = "Imagens/usa_flag.png";
-        flag.alt = "eua";
-    } else {
-        flag.src = "Imagens/brasil_flag.png";
-        flag.alt = "brasil";
-    }
-}
