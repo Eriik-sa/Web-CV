@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     "descricao": "Placeholder text blablabla...",
                     "contato": "Contact Information:",
                     "telefone": "Cellphone: (+55) 81 98541-4017",
-                    "endereco": "Address: Professor Silvio Rabelo Street, Jaboatão dos Guararapes - Pernambuco, Brazil",
+                    "endereco": "Address: Candeias, Jaboatão dos Guararapes - Pernambuco, Brazil",
                     "redes": "Social Networks:",
                     "experiencia": "Professional Experience",
                     "habilidades": "Skills",
@@ -18,33 +18,30 @@ document.addEventListener("DOMContentLoaded", function () {
                     "empresa": "Company:",
                 }
             },
-            pt: {
-                translation: {
-                    "titulo": "Desenvolvedor de Software JR.",
-                    "descricao": "Placeholder blablabla blablabla...",
-                    "contato": "Informações de contato:",
-                    "telefone": "Telefone: (81) 98541-4017",
-                    "endereco": "Endereço: Rua Professor Silvio Rabelo, Jaboatão dos Guararapes - Pernambuco",
-                    "redes": "Redes Sociais:",
-                    "experiencia": "Experiência Profissional",
-                    "habilidades": "Habilidades",
-                    "formacao": "Formação",
-                    "cursos": "Cursos",
-                    "jovem aprendiz": "Aprendiz - Assistente Administrativo (Julho 2024 - Dezembro 2024)",
-                    "empresa": "Empresa: ",
-                }
-            }
         }
-    }, function (err, t) {
-        atualizarTextos();
     });
-
-    function atualizarTextos() {
+    // Armazena o texto original em uma variável
+    function guardarTexto() {
         document.querySelectorAll("[data-translate]").forEach(el => {
-            el.innerHTML = i18next.t(el.dataset.translate);
+            if (!el.dataset.originalText) {
+                el.dataset.originalText = el.innerHTML; // Salva o texto original
+            }
         });
     }
 
+    function atualizarTextos() {
+        document.querySelectorAll("[data-translate]").forEach(el => {
+            if (i18next.language === "pt") {
+                // Reverte para o texto original em português
+                el.innerHTML = el.dataset.originalText;
+            } else {
+                // Traduz para o inglês
+                el.innerHTML = i18next.t(el.dataset.translate);
+            }
+        });
+    }
+
+    // Altera o idioma e atualiza os textos
     function mudar_idioma() {
         const flag = document.getElementById("flag");
         const novoIdioma = i18next.language === "pt" ? "en" : "pt";
@@ -52,10 +49,14 @@ document.addEventListener("DOMContentLoaded", function () {
         i18next.changeLanguage(novoIdioma, function () {
             atualizarTextos();
 
+            // Atualiza a bandeira 
             flag.src = novoIdioma === "en" ? "Imagens/usa_flag.png" : "Imagens/brasil_flag.png";
             flag.alt = novoIdioma === "en" ? "eua" : "brasil";
         });
     }
+
+    // Armazena o texto original quando a página carrega
+    guardarTexto();
 
     document.getElementById("flag").addEventListener("click", mudar_idioma);
 });
