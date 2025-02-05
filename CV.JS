@@ -6,31 +6,32 @@ document.addEventListener("DOMContentLoaded", function () {
                 translation: {
                     "titulo": "Junior Software Developer",
                     "descricao": "Placeholder text blablabla...",
-                    "contato": "Contact Information",
+                    "contato": "Contact Information:",
                     "telefone": "Cellphone: (+55) 81 98541-4017",
-                    "endereco": "Address: Professor Silvio Rabelo Street, Jaboatão dos Guararapes - PE, Brazil",
+                    "endereco": "Address: Professor Silvio Rabelo Street, Jaboatão dos Guararapes - Pernambuco, Brazil",
                     "redes": "Social Networks:",
-                    "linkedin": "LinkedIn",
                     "experiencia": "Professional Experience",
                     "habilidades": "Skills",
                     "formacao": "Education",
-                    "cursos": "Courses"
+                    "cursos": "Courses",
+                    "jovem aprendiz": "Apprentice - Administrative assistant (July 2024 - December 2024)",
+                    "empresa": "Company:",
                 }
             },
             pt: {
                 translation: {
                     "titulo": "Desenvolvedor de Software JR.",
                     "descricao": "Placeholder blablabla blablabla...",
-                    "contato": "Informações de contato",
+                    "contato": "Informações de contato:",
                     "telefone": "Telefone: (81) 98541-4017",
-                    "endereco": "Endereço: Rua Professor Silvio Rabelo, Jaboatão dos Guararapes - PE",
+                    "endereco": "Endereço: Rua Professor Silvio Rabelo, Jaboatão dos Guararapes - Pernambuco",
                     "redes": "Redes Sociais:",
-                    "linkedin": "LinkedIn",
-                    "github": "GitHub",
                     "experiencia": "Experiência Profissional",
                     "habilidades": "Habilidades",
                     "formacao": "Formação",
-                    "cursos": "Cursos"
+                    "cursos": "Cursos",
+                    "jovem aprendiz": "Aprendiz - Assistente Administrativo (Julho 2024 - Dezembro 2024)",
+                    "empresa": "Empresa: ",
                 }
             }
         }

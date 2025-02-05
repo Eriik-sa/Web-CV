@@ -39,8 +39,8 @@ body {
     font-weight: bold;
     color: var(--text-color);
     font-weight: 750;
-    text-align: right;
-    margin-right: 20px
+    text-align: center;
+    margin-left: 8rem;
 }
 
 .descricao_pessoal {
@@ -65,10 +65,12 @@ body {
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    /* duração da animação do hover */
 }
 
 .bandeira img:hover {
     transform: scale(1.1);
+    /* aumenta o tamanho da bandeira enquanto hover == True */
 }
 
 .container_pdf {
@@ -84,6 +86,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    /* adiciona um sublinhado ao link */
 }
 
 .github img,
@@ -136,7 +139,9 @@ a:hover {
     margin-top: 8px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px)
+/* visualizaão em telas pequenas */
+    {
     .container {
         grid-template-columns: 1fr;
         padding: 3rem;
@@ -211,6 +216,7 @@ h3 {
 .hard_skills,
 .soft_skills {
     width: 48%;
+    /* Define metade da página para cada seção, ficando uma ao lado da outra */
     line-height: 2;
 }
 
