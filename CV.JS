@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     i18next.init({
-        lng: "pt", // Idioma inicial (Português)
+        lng: "pt-br", // Idioma inicial (Português)
         resources: {
             en: {
                 translation: {
@@ -14,8 +14,16 @@ document.addEventListener("DOMContentLoaded", function () {
                     "habilidades": "Skills",
                     "formacao": "Education",
                     "cursos": "Courses",
-                    "jovem aprendiz": "Apprentice - Administrative assistant (July 2024 - December 2024)",
+                    "jovem aprendiz": "Trainee - Administrative assistant (July 2024 - December 2024)",
                     "empresa": "Company:",
+                    "scan": "Scanned, digitized and uploaded documents using the LMS, Emphasis TNT and FedEX systems;",
+                    "indenização": "Provided eventual assistance in preparing spreadsheets and documents regarding the process of customer compensation and other incidents;",
+                    "projeto": "Developed a web automation project for the document upload process, utilizing the emphasis website, Python programming language and the Selenium library",
+                    "soluções": "Trainee - Costumer solutions assistant (Current role)",
+                    "banco de dados": "Daily updates on the ongoing and outgoing merchandise excel spreadsheet;",
+                    "atendimento ao cliente": "Direct contact with the customer, using LMS web and e-mail to report goods availability, return and redelivery notes;",
+                    "RNCS": "Opening non-conformities (RNCs) and occurrences updates regarding clients merchandises, utilizing the LMS website"
+
                 }
             },
         }
