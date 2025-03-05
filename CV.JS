@@ -17,12 +17,27 @@ document.addEventListener("DOMContentLoaded", function () {
                     "jovem aprendiz": "Trainee - Administrative assistant (July 2024 - December 2024)",
                     "empresa": "Company:",
                     "scan": "Scanned, digitized and uploaded documents using the LMS, Emphasis TNT and FedEX systems;",
-                    "indenização": "Provided eventual assistance in preparing spreadsheets and documents regarding the process of customer compensation and other incidents;",
+                    "indenização": "Provided eventual assistance in preparing spreadsheets and documents regarding customer compensation and other incidents;",
                     "projeto": "Developed a web automation project for the document upload process, utilizing the emphasis website, Python programming language and the Selenium library",
                     "soluções": "Trainee - Costumer solutions assistant (Current role)",
                     "banco de dados": "Daily updates on the ongoing and outgoing merchandise excel spreadsheet;",
-                    "atendimento ao cliente": "Direct contact with the customer, using LMS web and e-mail to report goods availability, return and redelivery notes;",
-                    "RNCS": "Opening non-conformities (RNCs) and occurrences updates regarding clients merchandises, utilizing the LMS website"
+                    "atendimento ao cliente": "Direct contact with customers using LMS Web and email to generate goods availability letters, return invoices, and re-delivery notes.",
+                    "RNCS": "Opening of non-conformities (RNCs) and occurrences updates regarding clients merchandises, utilizing the LMS website",
+                    "contato clientes": "Sending emails to customers to ensure retention, while also addressing issues such as damaged goods, lost shipments, delays, and other concerns.",
+                    "pacote office": "Office Package",
+                    "inglês": "English level - B2",
+                    "atendimento ao publico": "Customer Service",
+                    "automações web": "Web system automations ",
+                    "backend": "Python and Selenium",
+                    "conceitos gerais": "General IT Concepts",
+                    "aprendizado continuo": "Continuous learning",
+                    "resolução de problemas": "Problem Solving",
+                    "excelente trabalho": "Excelent Team Work",
+                    "assertividade": "Assertiveness",
+                    "rapida adaptação": "Fast adaptability to changes"
+
+
+
 
                 }
             },
