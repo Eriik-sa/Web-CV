@@ -14,10 +14,7 @@
 html,
 body {
     height: 100%;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 body {
@@ -34,34 +31,63 @@ body {
     border: 3px solid rgba(70, 69, 69, 0.301);
 }
 
+.nome_perfil {
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 60px;
+
+}
+
 .titulo_perfil {
     font-size: 22px;
     font-weight: bold;
     color: var(--text-color);
     font-weight: 750;
-    text-align: center;
+    text-align: left;
     margin-left: 8rem;
 }
 
-.descricao_pessoal {
-    margin-left: 3rem;
-    margin-top: 0;
+.github img,
+.linkedin img,
+.container_pdf img {
+    object-fit: cover;
+    border-radius: 25%;
+    margin-right: 5px;
+}
+.container_pdf img{
+    width: 40px;
+    height: 40px;
 }
 
-.nome_perfil {
+.logos {
     width: 100%;
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-    margin-left: 60px;
+    top: 10px;
+    left: 30px;
+    position: fixed
+}
 
+.linkedin img:hover,
+.github img:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.container_pdf {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
 }
 
 .bandeira img {
     position: fixed;
     top: 10px;
     right: 50px;
-    width: 60px;
+    width: 80px;
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -73,11 +99,7 @@ body {
     /* aumenta o tamanho da bandeira enquanto hover == True */
 }
 
-.container_pdf {
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-}
+
 
 a {
     text-decoration: none;
@@ -89,25 +111,15 @@ a:hover {
     /* adiciona um sublinhado ao link */
 }
 
-.github img,
-.linkedin img {
-    object-fit: cover;
-    width: 25px;
-    margin-left: 3px;
-    margin-right: 2px;
-    height: 25px;
-    border-radius: 25%;
-}
-
 .github img {
     margin-left: 10px;
 }
 
-.descricao_pessoal {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: white
+.container_pdf img {
+    margin-left: 10px;
+    width: 30px;
+    height: fit-content;
+
 }
 
 .container {

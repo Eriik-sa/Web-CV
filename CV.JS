@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     i18next.init({
-        lng: "pt-br", // Idioma inicial (Português)
+        lng: "pt-br", // Idioma inicial 
         resources: {
             en: {
                 translation: {
                     "titulo": "Junior Software Developer",
+                    "pdf" : "Download CV as PDF",
                     "descricao": "Placeholder text blablabla...",
                     "contato": "Contact Information:",
                     "telefone": "Cellphone: (+55) 81 98541-4017",
