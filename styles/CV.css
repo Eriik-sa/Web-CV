@@ -65,7 +65,8 @@ body {
     width: 100%;
     top: 10px;
     left: 30px;
-    position: fixed
+    margin-top: 1rem;
+    position: fixed;
 }
 
 .linkedin img:hover,
