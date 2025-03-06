@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #20202081;
+    --text-color: #e0cf33;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.Foto_perfil img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(70, 69, 69, 0.301);
+}
+
+.nome_perfil {
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 60px;
+
+}
+
+.titulo_perfil {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text-color);
+    font-weight: 750;
+    text-align: left;
+    margin-left: 8rem;
+}
+
+.github img,
+.linkedin img,
+.container_pdf img {
+    object-fit: cover;
+    border-radius: 25%;
+    margin-right: 5px;
+}
+.container_pdf img{
+    width: 40px;
+    height: 40px;
+}
+
+.logos {
+    width: 100%;
+    top: 10px;
+    left: 30px;
+    position: fixed
+}
+
+.linkedin img:hover,
+.github img:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.container_pdf {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.bandeira img {
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    /* duração da animação do hover */
+}
+
+.bandeira img:hover {
+    transform: scale(1.1);
+    /* aumenta o tamanho da bandeira enquanto hover == True */
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #0A87BB;
+}
+
+a:hover {
+    text-decoration: underline;
+    /* adiciona um sublinhado ao link */
+}
+
+.github img {
+    margin-left: 10px;
+}
+
+.container_pdf img {
+    margin-left: 10px;
+    width: 30px;
+    height: fit-content;
+
+}
+
+.container {
+    min-height: calc(100vh - 10rem);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 4rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 90%;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+}
+
+.container_perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contato {
+    margin: 0;
+    line-height: 25px;
+    margin-top: 5px;
+}
+
+.contato h1 {
+    margin-top: 8px;
+}
+
+@media only screen and (max-width: 768px)
+/* visualizaão em telas pequenas */
+    {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+
+    .container_intro {
+        flex-direction: column;
+    }
+}
+
+.container_intro {
+    display: flex;
+}
+
+.cargos h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.cargos h2,
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+.empresa {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 252, 252, 0.966);
+    margin-left: 2px;
+}
+
+.Fed {
+    color: #4D148C;
+    font-weight: 800;
+}
+
+.Ex {
+    color: #FF6600;
+    font-weight: 800;
+}
+
+.atividades {
+    line-height: 2;
+}
+
+.skills_container {
+    /*"Habilidades"*/
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.Habilidades {
+    font-size: 25px;
+    margin-left: 13rem;
+    margin-bottom: 1rem;
+}
+
+.skills_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    /* Define uma largura máxima para evitar que os títulos quebrem */
+}
+
+.hard_skills,
+.soft_skills {
+    width: 48%;
+    /* Define metade da página para cada seção, ficando uma ao lado da outra */
+    line-height: 2;
+}
+
+.hard_skills h1,
+.soft_skills h1,
+.container_formacao h1,
+.container_cursos h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    width: 100%;
+}
+
+.container_formacao h1,
+.container_cursos h1 {
+    margin-bottom: 2px;
+}
