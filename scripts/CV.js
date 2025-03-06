@@ -81,6 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Armazena o texto original quando a página carrega
     guardarTexto();
-
-    document.getElementById("flag").addEventListener("click", mudar_idioma);
+    
+document.querySelector(".bandeira-container").addEventListener("click", mudar_idioma);
 });
