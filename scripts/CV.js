@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
             en: {
                 translation: {
                     "titulo": "Junior Software Developer",
-                    "pdf" : "Download CV as PDF",
+                    "pdf": "Download CV as PDF",
                     "descricao": "Placeholder text blablabla...",
                     "contato": "Contact Information:",
                     "telefone": "Cellphone: (+55) 81 98541-4017",
@@ -35,11 +35,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     "resolução de problemas": "Problem Solving",
                     "excelente trabalho": "Excelent Team Work",
                     "assertividade": "Assertiveness",
-                    "rapida adaptação": "Fast adaptability to changes"
-
-
-
-
+                    "rapida adaptação": "Fast adaptability to changes",
+                    "formacao": "Education",
+                    "ensino medio": "High School Diploma – Colégio Elo (2018 - 2020)",
+                    "ensino superior": "Software Engineering – Cruzeiro do Sul (2025.1 - 2028.2)",
+                    "aprendiz": "Young Apprentice Program – ESPRO (March - August 2022)",
+                    "cursos": "Courses",
+                    "logica": "Programming Logic with Python – USP",
+                    "desenvolvimento": "Web Development using HTML, CSS and JavaScript - Curso em Vídeo",
+                    "ifood": "Potência Tech iFood (Python for Data Science) – Digital Innovation One"
                 }
             },
         }
@@ -81,6 +85,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Armazena o texto original quando a página carrega
     guardarTexto();
-    
-document.querySelector(".bandeira-container").addEventListener("click", mudar_idioma);
+
+    document.querySelector(".bandeira-container").addEventListener("click", mudar_idioma);
 });
