@@ -304,8 +304,9 @@ h3 {
         grid-template-columns: 1fr 1fr;
         gap: 3rem
     }
-    .Habilidades{
-    margin-right: 19rem !important;    
+
+    .Habilidades {
+        margin-right: 19rem !important;
     }
 
     .hard_skills,
